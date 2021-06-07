@@ -1,0 +1,50 @@
+@charset "utf-8";
+.right-col .conve a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+.conve a i {
+    background-repeat: no-repeat;
+    background-image: url(../img/sprilt-5-3.png);
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 11px auto 0 auto;
+}
+
+.conve li:nth-child(2) i {
+    background-position: 0 calc(-44px * 2);
+}
+
+.conve li:nth-child(3) i {
+    background-position: 0 calc(-44px * 1);
+}
+
+.conve li:nth-child(4) i {
+    background-position: 0 calc(-44px * 3);
+}
+
+.conve li:nth-child(5) i {
+    background-position: 0 calc(-44px * 4);
+}
+
+.conve li:nth-child(6) i {
+    background-position: -40px 0;
+}
+
+.conve li:nth-child(7) i {
+    background-position: -40px -44px;
+}
+
+.conve li:nth-child(8) i {
+    background-position: -40px -88px;
+}
+
+.conve a p {
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    color: #333;
+}

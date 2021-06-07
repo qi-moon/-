@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重构淘宝主页面</title>
+    <link rel="shortcut icon" href="./img/tapbao1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/0201taobao.css">
+    <link rel="stylesheet" href="../css/0202.taobao.top-nav.css">
+    <link rel="stylesheet" href="../css/0301.taobao.goods-outter.css">
+    <link rel="stylesheet" href="../css/0302.taobao.leftnav.css">
+    <link rel="stylesheet" href="../css/0301.taobao.love-shopping.css">
+    <link rel="stylesheet" href="../css/0304.taobao.spirit.css">
+    <link rel="stylesheet" href="../css/0401.taobao.orientation.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="w1190 center-x">0101.站内导航模块</div>
+        <div class="fixed-outter">
+            <div class="top-outter">
+                <div class="w990 center-x">
+                    <div class="logo-outter">
+                        <a href="www.taobao.com">
+                        </a>
+                    </div>
+                    <input type="text" placeholder="请输入搜索内容">
+                    <img src="./img/index.png" alt="">
+                </div>
+                <div class="right-indl-outter">
+                    <a href="#">
+                        品质
+                        <br>
+                        好货
+                    </a>
+                    <a href="#">测试2</a>
+                    <a href="#">测试3</a>
+                    <a href="#">测试4</a>
+                    <a href="#">测试5</a>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav-outter">
+            <div class="w1190 center-x top-nav clearfix">
+                <h2 class="fl"> 主题市场</h2>
+                <ul class="fl clearfix">
+                    <li class="fl clearfix">
+                        <a href="https://www.tmall.com/?spm=a21bo.2017.201859.1.5af911d9WhsCvJ&acm=lb-zebra-634493-8609789.1003.4.8190923&scm=1003.4.lb-zebra-634493-8609789.OTHER_15917289417141_8190923" target="-blank">天猫</a>
+                    </li>
+                    <li class="fl clearfix">
+                        <a href="https://pages.tmall.com/wow/a/act/ju/dailygroup/2199/wupr?wh_pid=daily-222239&bid=1&spm=a21bo.2017.201859.2.5af911d9WhsCvJ&acm=lb-zebra-634493-8609789.1003.4.8190923&scm=1003.4.lb-zebra-634493-8609789.OTHER_15917285569652_8190923" target="-blank">   聚划算</a>
+                    </li>
+                    <li class="fl clearfix">
+                        <a href="https://chaoshi.tmall.com/?spm=a21bo.2017.201859.3.5af911d9WhsCvJ&acm=lb-zebra-634493-8609789.1003.4.8190923&scm=1003.4.lb-zebra-634493-8609789.OTHER_15917297112113_8190923" target="-blank"> 天猫超市</a>
+                    </li>
+                </ul>
+                <ul class="fl clearfix">
+                    <li class="fl clearfix">|</li>
+                    <li>
+                        <a href="https://sf.taobao.com/?spm=a21bo.2017.201859.4.5af911d9WhsCvJ&acm=lb-zebra-634493-8609809.1003.4.8190924&scm=1003.4.lb-zebra-634493-8609809.OTHER_15917297551503_8190924" target="-blank"> 司法拍卖</a>
+                    </li>
+                    <li class="fl clearfix">
+                        <a href="https://good.tmall.com/?spm=a21bo.2017.201859.5.5af911d9WhsCvJ&acm=lb-zebra-634493-8609809.1003.4.8190924&scm=1003.4.lb-zebra-634493-8609809.OTHER_15917293704014_8190924" target="-blank">  淘宝心选</a>
+                    </li>
+                    <li class="fl clearfix">
+                        <a href="https://pages.tmall.com/wow/a/act/tiantian/dailygroup/2391/wupr?spm=a21bo.2017.201859.6.5af911d9WhsCvJ&wh_pid=daily-231043&acm=lb-zebra-634493-8609809.1003.4.8190924&scm=1003.4.lb-zebra-634493-8609809.OTHER_16104066214633_8190924" target="-blank"> 天天特卖</a>
+                    </li>
+                </ul>
+                <ul class="fl clearfix">
+                    <li>|</li>
+                    <li class="fl clearfix">
+                        <a href="https://www.fliggy.com/?spm=a21bo.2017.201859.7.5af911d9WhsCvJ&acm=lb-zebra-634493-8609810.1003.4.8190926&scm=1003.4.lb-zebra-634493-8609810.OTHER_15917290166311_8190926" target="-blank"> 飞猪旅行</a>
+                    </li>
+                    <li class="fl clearfix">
+                        <a href="https://tmjl.tmall.com/?spm=a21bo.2017.201859.8.5af911d9WhsCvJ&acm=lb-zebra-634493-8609810.1003.4.8190926&scm=1003.4.lb-zebra-634493-8609810.OTHER_15917286318822_8190926" target="-blank">  智能生活</a>
+                    </li>
+                    <li class="fl clearfix">
+                        <a href="https://suning.tmall.com/?spm=a21bo.2017.201859.9.5af911d9WhsCvJ&acm=lb-zebra-634493-8609810.1003.4.8190926&scm=1003.4.lb-zebra-634493-8609810.OTHER_15917297861283_8190926" target="-blank">  苏宁易购</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w1190 center-x ">
+            <div class="screen-outter">
+                <div class="left-main">
+                    <div class="left-nav"></div>
+                    <div class="banner"></div>
+                    <div class="adv"></div>
+                </div>
+                <div class="right-col">
+                    <div class="user-info">上</div>
+                    <div class="conve">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i></i>
+                                    <p>充话费</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i></i>
+                                    <p>旅行</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i></i>
+                                    <p>车险</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i></i>
+                                    <p>游戏</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i></i>
+                                    <p>彩票</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i></i>
+                                    <p>电影</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i></i>
+                                    <p>酒店</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i></i>
+                                    <p>理财</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="app">下</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="w1190 center-x">
+            <div>
+                <div class=" goods-outter">
+                    <div class="goods fl">
+                        <h3 class="goods-title">
+                            <em class="hidden">有好货</em>
+                            <img class="mlogo " src="../img/hoods-logo.png" alt="">
+                            <p>
+                                <span>
+                                与品质生活不期而遇
+                              </span>
+                            </p>
+                        </h3>
+                        <ul class="goods-list">
+                            <li>
+                                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.1.5af911d9fFFnKH&contentId=125615421407&scm=1007.12846.156652.0&pvid=e22b6aa2-fc80-4453-b95b-70f6baa25d19" target="_black">
+                                    <div class="photo-outter">
+                                        <img class="photo" src="../img/goods-1.jpg_.webp" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            多功能旅行收纳包
+                                        </h4>
+                                        <p>
+                                            韩式多功能收纳包，采用具有防水功能的尼龙和涤纶材料加工而成。款式的设计非常简洁大方，背在身上非常有潮范！纯色的设计，具有减龄的功能，让你看起来更加的具有青春活力。背包的里面设有多个隔层，方便大家外出的时候将自己的衣物、卡和护照等物品分类放好。
+                                        </p>
+                                        <p>
+                                            <i class="face"></i> 99999人说好
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://market.m.taobao.com/app/tb-source-app/aiguangjiepc/content/index.html?spm=a21bo.2017.201870.2.5af911d9fFFnKH&contentId=4000000238507382811&scm=1007.12846.156652.0&pvid=e22b6aa2-fc80-4453-b95b-70f6baa25d19" target="_black">
+                                    <div class="photo-outter">
+                                        <img class="photo" src="../img/goods-2.jpg_.webp" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            Pure Cashmere 保暖针织帽
+                                        </h4>
+                                        <p>
+                                            这款针织帽风格休闲可爱，帽口双面装饰设计，非常有层次感，带上也会更舒服，简约的外型，柔软的纯羊绒面料，既美观又保暖。
+                                        </p>
+                                        <p>
+                                            <i class="face"></i> 99999人说好
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo-outter">
+                                        <img class="photo" src="../img/goods-3.jpg_.webp" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            二胎家庭都在用这种床
+                                        </h4>
+                                        <p>
+                                            软床质量很好很高档，很喜欢外观高档，工艺精湛，气味不大，直观上有档次，厚重。
+                                        </p>
+                                        <p>
+                                            <i class="face"></i> 99999人说好
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo-outter">
+                                        <img class="photo" src="../img/goods-4.jpg_.webp" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            周大福 古法黄金70克实心手镯
+                                        </h4>
+                                        <p>
+                                            周大福品牌凭借着专业和优质的珠宝首饰设计，打造了全球华人第一珠宝品牌的形象，深受消费者的喜爱。采用优质足金材质打造而成，给你带来极致奢华的视觉享受，加上精细的做工工艺，完美展现女性优雅动人气质，简洁流畅的线条，增添几分灵动美感。
+                                        </p>
+                                        <p>
+                                            <i class="face"></i> 99999人说好
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo-outter">
+                                        <img class="photo" src="../img/goods-5.jpg_.webp" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            【甲油胶】冰透裸粉果冻胶美甲店专用
+                                        </h4>
+                                        <p>
+                                            套装设计，方便日常使用。
+                                        </p>
+                                        <p>
+                                            <i class="face"></i> 99999人说好
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="photo-outter">
+                                        <img class="photo" src="../img/goods-6.jpg_.webp" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            TOUS桃丝熊 经典款开口钢网爱心手镯
+                                        </h4>
+                                        <p>
+                                            采用开口样式设计，拆卸更加方便。
+                                        </p>
+                                        <p>
+                                            <i class="face"></i> 99999人说好
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shopping fl">
+                        <div>
+                            <h3 class="shopping-title">爱逛街</h3>
+                            <ul class="shopping-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="shopping-img">
+                                            <img src="../img/goods-2.jpg_.webp" alt="">
+                                        </div>
+                                        <div class="shopping-info">
+                                            <h4> Pure Cashmere 保暖针织帽</h4>
+                                            <p class="p1"> 这款针织帽风格休闲可爱，帽口双面装饰设计，非常有层次感，带上也会更舒服，简约的外型，柔软的纯羊绒面料，既美观又保暖。</p>
+                                            <p class="p2">
+                                                <i class="face"></i> 88888人说好
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="shopping-img">
+                                            <img src="../img/goods-2.jpg_.webp" alt="">
+                                        </div>
+                                        <div class="shopping-info">
+                                            <h4> Pure Cashmere 保暖针织帽</h4>
+                                            <p class="p1"> 这款针织帽风格休闲可爱，帽口双面装饰设计，非常有层次感，带上也会更舒服，简约的外型，柔软的纯羊绒面料，既美观又保暖。</p>
+                                            <p class="p2">
+                                                <i class="face"></i> 88888人说好
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="shopping-img">
+                                            <img src="../img/goods-2.jpg_.webp" alt="">
+                                        </div>
+                                        <div class="shopping-info">
+                                            <h4> Pure Cashmere 保暖针织帽</h4>
+                                            <p class="p1"> 这款针织帽风格休闲可爱，帽口双面装饰设计，非常有层次感，带上也会更舒服，简约的外型，柔软的纯羊绒面料，既美观又保暖。</p>
+                                            <p class="p2">
+                                                <i class="face"></i> 88888人说好
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="shopping-img">
+                                            <img src="../img/goods-2.jpg_.webp" alt="">
+                                        </div>
+                                        <div class="shopping-info">
+                                            <h4> Pure Cashmere 保暖针织帽</h4>
+                                            <p class="p1"> 这款针织帽风格休闲可爱，帽口双面装饰设计，非常有层次感，带上也会更舒服，简约的外型，柔软的纯羊绒面料，既美观又保暖。</p>
+                                            <p class="p2">
+                                                <i class="face"></i> 88888人说好
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="shopping-img">
+                                            <img src="../img/goods-2.jpg_.webp" alt="">
+                                        </div>
+                                        <div class="shopping-info">
+                                            <h4> Pure Cashmere 保暖针织帽</h4>
+                                            <p class="p1"> 这款针织帽风格休闲可爱，帽口双面装饰设计，非常有层次感，带上也会更舒服，简约的外型，柔软的纯羊绒面料，既美观又保暖。</p>
+                                            <p class="p2">
+                                                <i class="face"></i> 88888人说好
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="shopping-img">
+                                            <img src="../img/goods-2.jpg_.webp" alt="">
+                                        </div>
+                                        <div class="shopping-info">
+                                            <h4> Pure Cashmere 保暖针织帽</h4>
+                                            <p class="p1"> 这款针织帽风格休闲可爱，帽口双面装饰设计，非常有层次感，带上也会更舒服，简约的外型，柔软的纯羊绒面料，既美观又保暖。</p>
+                                            <p class="p2">
+                                                <i class="face"></i> 88888人说好
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>0202.层间广告</div>
+            <div>0203.每日好店。淘宝直播模块</div>
+            <div>0204.特色好物模块</div>
+            <div>0205.热卖单品</div>
+            <div>0206.猜你喜欢</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>0301.商城服务</div>
+        <div>0302.友情链接和认证服务</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正方体</title>
+    <style>
+        .box {
+            transform: rotate3d(1, 1, 0, -45deg);
+            margin-top: 200px;
+            transform-style: preserve-3d;
+            position: absolute;
+            left: calc(50% - 150px);
+
+        }
+
+        .box:hover {
+            transform: rotate3d(1, 1, 0, 360deg);
+            transition: all 5s;
+        }
+
+
+        .dd {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            font-size: 80px;
+            position: absolute;
+            opacity: 1;
+        }
+
+        .d1 {
+            background-color: red;
+            transform: rotateX(90deg) translatez(150px);
+        }
+
+        .d2 {
+            background-color: yellow;
+            transform: rotateX(-270deg) translatez(-150px);
+        }
+
+        .d3 {
+            background-color: blueviolet;
+            transform: translateZ(150px)
+        }
+
+        .d4 {
+            background-color: blue;
+            transform: rotatey(180deg) translateZ(150px)
+        }
+
+        .d5 {
+            background-color: pink;
+            transform: rotatey(-90deg) translatez(150px);
+        }
+
+        .d6 {
+            background-color: sandybrown;
+            transform: rotatey(90deg) translatez(150px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="dd d1">上</div>
+        <div class="dd d2">下</div>
+        <div class="dd d3">前</div>
+        <div class="dd d4">后</div>
+        <div class="dd d5">左</div>
+        <div class="dd d6">右</div>
+    </div>
+</body>
+
+</html>

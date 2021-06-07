@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 类选择器：以文档语言对象类型作为选择符 */
+        .first-div>span {
+            background-color: red;
+        }
+
+        /* ID选择器：以唯一标识符id属性等于myid的E对象作为选择符。 */
+        .first-div>#idselector {
+            background-color: green;
+        }
+
+        /* 类选择器：以class属性包含myclass的E对象作为选择符。 */
+        .first-div>.ClassSelector {
+            background-color: yellow;
+        }
+
+        /* 包含选择器：选择所有被E元素包含的F元素 */
+        .second-div .include {
+            background-color: yellowgreen;
+        }
+
+        /* 子代选择器：选择紧贴在E元素之后F元素，元素E与F必须同属一个父级 */
+        .second-div>.son {
+            background-color: violet;
+        }
+
+        /* 相邻选择器：选择紧贴在E元素之后F元素，元素E与F必须同属一个父级 */
+        .second-div>.son>.grandson+div {
+            background-color: turquoise;
+        }
+
+        /* 兄弟选择器：选择E元素后面的所有兄弟元素F，元素E与F必须同属一个父级 */
+        .grandson~span {
+            background-color: tomato;
+        }
+
+        /* 属性选择器E[att]:选择具有att属性的E元素。 */
+        .third-div span[class] {
+            background-color: teal;
+        }
+
+        /* 属性选择器E[att="val"] ：选择具有att属性且属性值等于val的E元素 */
+        .third-div span[class="valselector1"] {
+            background-color: aqua;
+        }
+
+        /* 属性选择器E[att~="val"]：选择具有att属性且属性值为一用空格分隔的字词列表，其中一个等于val的E元素（包含只有一个值且该值等于val的情况）。  */
+        .third-div span[class~="valselector2"] {
+            background-color: blueviolet;
+        }
+
+        /* 属性选择器E[att^="val"]：选择具有att属性且属性值为以val开头的字符串的E元素。 */
+        .third-div span[class^="hz"] {
+            background-color: chartreuse;
+        }
+
+        /* 属性选择器E[att$="val"]：选择具有att属性且属性值为以val结尾的字符串的E元素 */
+        .third-div span[class$="hz"] {
+            background-color: chocolate;
+        }
+
+        /* 属性选择器E[att*="val"] ：选择具有att属性且属性值为包含val的字符串的E元素。 */
+        .fourth-div>span[class*="a"] {
+            background-color: cornflowerblue;
+        }
+
+        /* 属性选择器E[att|="val"] ：选择具有att属性，其值是以val开头并用连接符"-"分隔的字符串的E元素；如果值仅为val，也将被选择。 */
+        .fourth-div>span[class|="b"] {
+            background-color: darkcyan;
+        }
+
+        /* 伪类选择器E:link：设置超链接a在未被访问前的样式 */
+        .fifth-div>a:link {
+            color: black;
+        }
+
+        /* 伪类选择器E:visited：设置超链接a在其链接地址已被访问过时的样式。 */
+        .fifth-div>a:visited {
+            color: red;
+        }
+
+        /* 伪类选择器E:hover设置元素在其鼠标悬停时的样式 */
+        .fifth-div>a:hover {
+            color: blue;
+        }
+
+        /* 伪类选择器E:active设置元素在被用户激活（在鼠标点击与释放之间发生的事件）时的样式。  */
+        .fifth-div>a:active {
+            color: yellow;
+        }
+
+        /* 伪类选择器E:focus设置对象在成为输入焦点（该对象的onfocus事件发生）时的样式 */
+        .input1:focus {
+            background-color: wheat;
+        }
+
+        /* 设置宽让文字全部显示 */
+        .input1 {
+            width: 200px;
+        }
+
+        /* 伪类选择器E:not(s)匹配不含有s选择符的元素E。  */
+        .six-div>span:not(.a) {
+            background-color: tomato;
+        }
+
+        /* E:first-child 匹配父元素的第一个子元素E。 */
+        .seventh-div>span:first-child {
+            color: red;
+        }
+
+        /* E:last-child 匹配父元素的最后一个子元素E。 */
+        .seventh-div>span:last-child {
+            color: blue;
+        }
+
+        /* E:nth-child(n)匹配父元素的第n个子元素E，假设该子元素不是E，则选择符无效 */
+        .seventh-div>span:nth-child(2) {
+            color: green;
+        }
+
+        /* E:first-of-type匹配父元素下第一个类型为E的子元素。 */
+        .eighth-div>span:first-of-type {
+            color: hotpink;
+        }
+
+        /* E:nth-of-type(n)匹配父元素的第n个子元素E。  */
+        .eighth-div>span:nth-of-type(2) {
+            color: indianred;
+        }
+
+        /* E:last-of-type匹配父元素下的所有E子元素中的倒数第一个 */
+        .eighth-div>span:last-of-type {
+            color: indigo;
+        }
+    </style>
+</head>
+
+<body>
+    ​<div class="first-div">
+        <span>类选择器</span>
+        <span id="idselector">ID选择器</span>
+        <span class="ClassSelector">类选择器</span>
+    </div>
+    <div class="second-div">
+        <span class="include">包含选择器</span>
+        <span class="son">子代选择器
+            <div class="grandson">我是孙子选不中</div>
+            <div>我和孙子级别相邻</div>
+            <span>我是兄弟1</span><span>我是兄弟2</span>
+        </span>
+    </div>
+    <div class="third-div">
+        <span class="attselector">属性选择器，只选择class属性</span>
+        <span class="valselector1">E[att="val"]</span>
+        <span class="valselector2">E[att~="val"]我们都有valselector2</span>
+        <span class="valselector2 valselector3">E[att~="val"]我们都有valselector2</span>
+        <span class="hzselector">E[att^="val"]我们的class都是hz开头</span>
+        <span class="hzsele">E[att^="val"]我们的class都是hz开头</span>
+        <span class="selehz">E[att$="val"]我们的class都是hz结尾</span>
+        <span class="selectorhz">E[att$="val"]我们的class都是hz结尾</span>
+    </div>
+    <div class="fourth-div">
+        <span class="abcd">E[att*="val"]我们的class都有a这个字符</span>
+        <span class="aert">E[att*="val"]我们的class都有a这个字符</span>
+        <span class="ahgf">E[att*="val"]我们的class都有a这个字符</span>
+        <span class="b-test">E[att|="val"]我的class是b-开头的</span>
+        <span class="test-b">E[att|="val"]我的class是b-结尾，所以我没颜色</span>
+        <span class="b">E[att|="val"]我的class直接是b</span>
+    </div><br>
+    <div class="fifth-div">
+        <a href="#">我是一个超链接,未被访问我是黑色的，访问了我是红色的，悬停时我是蓝色的，被激活我是黄色的</a>
+    </div>
+    <input class="input1" type="text" value="我是一个输入框,被选中我是棕色">
+    <div class="six-div">
+        <span class="a b c">我的class含有a</span>
+        <span class="a d e">我的class也含有a</span>
+        <span class="f g">我的class不含有a</span>
+    </div>
+    <div class="seventh-div">
+        <span>我是seventh-div的第一个孩子</span>
+        <span>我是seventh-div的第二个孩子</span>
+        <span>我是seventh-div的第三个孩子</span>
+    </div>
+    <div class="eighth-div">
+        <span>我是第一个孩子</span>
+        <p>我是第二个孩子，但是不是span，所以还是默认的颜色</p>
+        <span>我是第三个孩子，但是是第二个span</span>
+        <span>我是最后一个孩子</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四叶草</title>
+    <style>
+        .dd {
+            position: relative;
+            margin: 50px 0 0 50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .dd {
+            width: 20px;
+            height: 20px;
+            background: green;
+            position: relative;
+        }
+
+        .dd:before {
+            content: '';
+            width: 10px;
+            height: 20px;
+            position: absolute;
+            left: -9px;
+            top: 0;
+            background: green;
+            border-radius: 50px 0 0 50px;
+        }
+
+        .dd:after {
+            content: '';
+            width: 20px;
+            height: 10px;
+            position: absolute;
+            left: 0;
+            top: -9px;
+            background: green;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .d1 {
+            transform: translate(0px, -18px)rotate(30deg);
+        }
+
+        .d2 {
+            transform: translate(-10.5px, -70px) rotate(-60deg);
+        }
+
+        .d3 {
+            transform: translate(18px, -148px) rotate(120deg);
+        }
+
+        .d4 {
+            transform: translate(7.5px, -200px) rotate(210deg);
+        }
+
+        .d5 {
+            width: 2px;
+            height: 50px;
+            border-right: 2px solid green;
+            position: relative;
+            top: -199px;
+            left: 74px;
+            transform: rotate(-15deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dd d1"></div>
+    <div class="dd d2"></div>
+    <div class="dd d3"></div>
+    <div class="dd d4"></div>
+    <div class="d5"></div>
+</body>
+
+</html>

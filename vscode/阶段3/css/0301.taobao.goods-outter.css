@@ -1,0 +1,125 @@
+@charset "utd-8";
+.goods-outter {
+    background-color: #fff;
+    /* 子块div已设置高度，快元素高根据内容决定，本处省略
+    height: calc(358px + 271px + 17px); */
+    /* 目测 */
+    outline: 1px solid blue;
+}
+
+.goods,
+.shopping {
+    width: calc((100% - 10px) / 2);
+    height: calc(358px + (271px + 17px));
+    /* 目测 */
+    outline: red 1px solid;
+}
+
+.goods {
+    margin-right: 10px;
+}
+
+.goods-title {
+    height: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    /* 目测 */
+    outline: 1px solid black;
+}
+
+.goods-list {
+    height: calc(100% - (24px + 20px + 20px));
+    margin-left: 20px;
+    background-color: #fff;
+    /* 目测 */
+    outline: 1px solid red;
+}
+
+.goods-outter .goods-title .mlogo {
+    height: 24px;
+    vertical-align: -6px;
+}
+
+.goods-outter .goods-title p {
+    height: 24px;
+    line-height: 24px;
+    color: #999;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.goods>.goods-list>li {
+    height: 271px;
+    width: calc(100%/3 - 14px);
+    float: left;
+    margin: 0 14px 17px 0;
+    /* 目测 */
+    outline: 1px solid red;
+}
+
+.goods>.goods-list .photo-outter {
+    height: 180px;
+}
+
+.goods>.goods-list .photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* 目测 */
+    outline: 1px solid blue;
+}
+
+.goods>.goods-list .info {
+    height: calc(100% - 180px);
+    overflow: hidden;
+    padding: 0 4px 0 6px;
+    /* 目测 */
+    outline: 1px solid red;
+}
+
+.goods>.goods-list a {
+    display: block;
+    color: #3c3c3c;
+    text-decoration: none;
+    overflow: hidden;
+    height: 100%;
+}
+
+.goods>.goods-list a h4 {
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+.goods>.goods-list a p:nth-of-type(1) {
+    height: 24px;
+    line-height: 24px;
+    color: #999;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.goods>.goods-list a p:nth-of-type(2) {
+    height: 22px;
+    line-height: 22px;
+    color: #35b1ff;
+    margin-top: 12px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.goods>.goods-list .face {
+    background-image: url(../img/face.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: -10px;
+}

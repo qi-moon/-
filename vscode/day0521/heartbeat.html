@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心跳</title>
+    <style>
+        .outter {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: calc(50% - 250px);
+            top: calc(50% - 250px);
+            background-color: pink;
+        }
+
+        body {
+            background-color: pink;
+        }
+
+        .d1,
+        .d2 {
+            width: 100px;
+            height: 200px;
+            background-color: rgb(212, 9, 60);
+            border-radius: 100px 0 0 100px;
+            box-shadow: 0 0 70px #d5093c;
+        }
+
+        .heart1 {
+            transform: rotate(45deg);
+            position: absolute;
+            left: 95px;
+            top: 55px;
+
+        }
+
+        .heart2 {
+            transform: rotate(135deg);
+            position: absolute;
+            left: 305px;
+            top: 55px;
+
+        }
+
+        .heart3 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(212, 9, 60);
+            transform: rotate(45deg);
+            position: absolute;
+            left: 150px;
+            top: 160px;
+            box-shadow: 0 0 70px #d5093c;
+        }
+
+        @keyframes heart {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.3);
+                ;
+
+            }
+
+            100% {
+                transform: scale(1);
+            }
+
+        }
+
+        .outter {
+            animation: heart 1.5s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outter">
+        <div class="d1 heart1"></div>
+        <div class="d2 heart2"></div>
+        <div class="d3 heart3"></div>
+    </div>
+</body>
+
+</html>

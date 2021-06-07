@@ -1,0 +1,95 @@
+@charset "utf-8";
+.goods-outter .shopping .shopping-title {
+    height: 24px;
+    line-height: 24px;
+    margin: 20px 0 20px 20px;
+    /* 目测 */
+    outline: 1px solid red;
+}
+
+.goods-outter .shopping .shopping-list {
+    height: calc(646px - 64px);
+    width: 570px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* 目测 */
+    outline: 1px solid blue;
+}
+
+.goods-outter .shopping .shopping-list li {
+    flex: 1 0 26%;
+    height: 271px;
+    /* 目测 */
+    outline: 1px solid red;
+    margin: 0 14px 17px 0;
+}
+
+.shopping .shopping-list a {
+    display: block;
+    text-decoration: none;
+    height: 271px;
+}
+
+.shopping .shopping-list .shopping-info {
+    width: 166px;
+    height: 180px;
+}
+
+.shopping .shopping-list img {
+    width: 100%;
+    height: 100%;
+}
+
+.shopping .shopping-list .shopping-info {
+    height: 91px;
+    padding: 0 4px 0 6px;
+    overflow: hidden;
+}
+
+.shopping .shopping-list .shopping-info>h4 {
+    height: 28px;
+    line-height: 28px;
+    margin-top: 5px;
+    font-size: 16px;
+    overflow: hidden;
+    color: #3c3c3c;
+    font-weight: 400;
+}
+
+.shopping .shopping-list .shopping-info>.p1 {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #999;
+    font-size: 14px;
+}
+
+.shopping .shopping-list .shopping-info>.p2 {
+    height: 22px;
+    line-height: 22px;
+    margin-top: 12px;
+    color: #35b1ff;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.shopping .shopping-list .shopping-info .face {
+    background-image: url(../img/face.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: -10px;
+}
+
+.shopping .shopping-list .shopping-img {
+    height: 180px;
+    width: 176px;
+}
+
+.shopping .shopping-list img {
+    height: 100%;
+}

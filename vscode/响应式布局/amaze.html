@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../组件学习/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        .content1 {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .col-md-8 .items p {
+            margin: 16px 0px;
+            font-size: 16px;
+            color: #000;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .box2 ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        .box2 ul li {
+            padding: 10px;
+            border: 1px solid #dedede;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">blog</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#" style="color: #0e90d2;background-color: rgb(248, 248, 248);">首页
+                                <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">项目</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">菜单 <span class="caret"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索文章" style="border-radius: 0px;">
+                        </div>
+                        <button type="submit" class="btn btn-default"
+                            style="border-radius: 0px;background-color: #d4d4d4;">搜索</button>
+                    </form>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div class="content1 clearfix">
+        <div class="col-sm-8">
+            <div class="items">
+                <h3 style="padding-top: 10px;padding-bottom: 20px;margin: 0px;">Google fonts 的字體（display 篇）</h3>
+                <h4 style="padding-bottom: 10px;">by open posted on 2014/06/17 under 字体</h4>
+                <div class="clearfix">
+                    <div class="col-md-7" style="padding: 0px;">
+                        <p>你自信滿滿的跟客戶進行第一次 demo。秀出你精心設計的內容時，你原本期許客戶冷不防地掉下感動的眼淚。</p>
+                        <p>因為那實在是太高級了。</p>
+                        <p>除了各項基本架構幾乎完美無缺之外，內文是高貴的，有著一些距離感的，典雅的襯線字體。不是 Times New
+                            Roman，而是很少有人見過的，你精心挑選過的字體，凸顯你品味的高超。而且它並沒有花上你與業主一毛錢，或許這也非常重要。</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p>
+                            <img style="max-width: 100%;"
+                                src="https://farm3.staticflickr.com/2917/14186214720_5d0b8ca2e3_b.jpg" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-12" style="padding: 0px;">
+                    <p>看著自己的作品，你的喜悅之情溢於言表，差點就要說出我要感謝我的父母之類的得獎感言。但在你對面的客戶先是一點表情也沒有，又瞬間轉為陰沉，抿了抿嘴角冷冷的說……</p>
+                    <p>「我要一種比較跳的感覺懂嗎？」</p>
+                </div>
+            </div>
+            <hr class="col-sm-12" style="margin: 30px 0px;padding: 0px;">
+            <div class="items">
+                <h3 style="padding-top: 10px;padding-bottom: 20px;margin: 0px;">身邊的字體: Arial (上)</h3>
+                <h4 style="padding-bottom: 10px;">by open posted on 2014/06/17 under 字体</h4>
+                <div class="clearfix">
+                    <div class="col-md-7" style="padding: 0px;">
+                        <p> 这次要介绍的是大家似乎都狠熟悉却又狠陌生的字体：Arial。不只是对 Typography
+                            特别有兴趣的人、碰过排版的人，就算毫无接触，只要打开过电脑的字型选单，应该都有看过这个字型吧。尤其它还是以 A 开头，总是会出现在选单最前面。</p>
+                        <p>Arial 常常跟 Helvetica 搞混，也常被当作是没有 Helvetica 时的替代字体使用。事实上 Arial 确实就是故意做得跟 Helvetica
+                            狠相似，连每个字母的宽度都刻意做得一模一样。</p>
+                    </div>
+                    <div class="col-md-5">
+                        <p>
+                            <img style="max-width: 100%;"
+                                src="https://farm3.staticflickr.com/2917/14186214720_5d0b8ca2e3_b.jpg" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-12" style="padding: 0px;">
+                    <p>在欧美的排版业界中，使用 Arial 的作品意即是「不使用 Helvetica 的作品」，会被认為是设计师对字体的使用没有概念或是太容易妥协，基本上我大致也是同意。</p>
+                    <p>因為 Helvetica 只有 Mac 上才有內建，Windows 用戶除非花錢買，不然是沒有 Helvetica 能用，所以使用 Arial 的設計師往往被看成是不願意對 Typography
+                        花錢，專業素養不到家的人。除了在確保網頁相容性等絕對必需的情況外，幾乎可以說是不應該使用的字體。</p>
+                    <p>但是，在此之前，我們對 Arial 又有多少認識呢？</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="box">
+                <div class="box1" style="border:1px solid #ddd;">
+                    <div style="padding: 6px 12.5px;background-color: #f5f5f5;">关于我</div>
+                    <div style="padding: 12.5px;">
+                        <p style="font-size: 16px;">前所未有的中文云端字型服务，让您在 web
+                            平台上自由使用高品质中文字体，跨平台、可搜寻，而且超美。云端字型是我们的事业，推广字型学知识是我们的志业。从字体出发，关心设计与我们的生活，justfont blog
+                            正是為此而生。</p>
+                        <button type="button" class="btn btn-success" style="border-radius: 0px;">查看更多</button>
+                    </div>
+                </div>
+                <div class="box2" style="padding-top: 6px;">
+                    <div style="padding: 6px 12.5px;background-color: #f5f5f5;">文章目录</div>
+                    <ul class="am-list blog-list">
+                        <li><a href="#">Google fonts 的字體（sans-serif 篇）</a></li>
+                        <li><a href="#">[but]服貿最前線？－再訪桃園機場</a></li>
+                        <li><a href="#">到日星鑄字行學字型</a></li>
+                        <li><a href="#">glyph font vs. 漢字（上）</a></li>
+                        <li><a href="#">浙江民間書刻體上線</a></li>
+                        <li><a href="#">[極短篇] Android v.s iOS，誰的字體好讀？</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
